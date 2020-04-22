@@ -3,14 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/main.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>tUTAJ header</h1>
+        <div class="slider"></div>
+        <div class="logo"></div>
         <nav class="navbar">
+            <a href="#" class="navbar__element">I stopnia</a>
+            <a href="#" class="navbar__element">II stopnia</a>
+            <a href="#" class="navbar__element">Podyplomowe</a>
+            <a href="#" class="navbar__element">Szkolenia</a>
+            <a href="#" class="navbar__element">Usługi</a>
         </nav>
+        
+
+        <div class="main-text">
+            <h1 class="main-text__head">Będziesz się uczyć z ciekawością.</h1>
+            <h1 class="main-text__subhead">Obiecujemy.</h1>
+        </div>
+
+        <div class="buttons">
+            <button class="button">Zobacz więcej</button>
+            <button class="button transparent">Umów się z aniołem</button>
+        </div>
     </header>
+
+    <section class="info">
+        <div class="info__element">
+            <div class="info__element-wrapper">
+                <h1 class="info__element-header">Dla kogo?</h1>
+                <p class="info__element-content">Dedykowane nauczycielom posiadającym przygotowanie pedagogiczne, którzy chcą uzyskać merytoryczne i metodyczne przygotowanie do nauczania kolejnego przedmiotu - Geografii.</p>
+                <p class="info__element-details">Studia adresowane są do osób legitymujących się wyższym wykształceniem na poziomie studiów licencjackim o specjalnościach nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, lub słuchaczy legitymujących się wyższym wykształceniem na poziomie studiów magisterskich nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, zgodnie z Rozporządzeniem Ministra Edukacji Narodowej z dnia 1 sierpnia 2017 r. w sprawie szczegółowych kwalifikacji wymaganych od nauczycieli (Dz.U. 2017 poz. 1575).</p>
+                <p class="info__element-requirements">Wymagane od kandydata:
+                    <span>Ukończone studia wyższe</span>
+                    <span>Przygotowanie pedagogiczne</span>
+                </p>
+            </div>
+            <div class="info__element-image"></div>
+        </div>
+    </section>
+
+    <section class="info second-item">
+        <div class="info__element">
+            <div class="info__element-image"></div>
+            <div class="info__element-wrapper">
+                <h1 class="info__element-header">Po co?</h1>
+                <p class="info__element-content">UW wie co zrobić, by programy proponowanych kierunków studiów były jak najbardziej atrakcyjne z biznesowego punktu widzenia. Do współpracy zapraszamy przedsiębiorców, trenerów, doświadczonych praktyków. Dbamy o to, żeby nasi studenci korzystali z doświadczenia i wiedzy osób, które odniosły w życiu zawodowy sukces. Dążymy do tego, by wybierający naszą uczelnię już w trakcie studiów mieli kontakt z jak największą liczbą pracodawców i praktyków biznesu ponieważ wiemy, że pomoże to im w zdobyciu wielu potrzebnych kwalifikacji oraz umiejętności, które zaprocentują w każdym miejscu pracy a także zainspiruje do poszerzania swoich kompetencji.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info third-item">
+        <div class="info__element">
+            <div class="info__element-wrapper">
+                <h1 class="info__element-header">Z kim?</h1>
+                <p class="info__element-content">Ciekawość jest najpotężniejszą cechą ludzką, która popycha ludzi do ciągłego rozwoju. CDV to miejsce, w którym studenci z zainteresowaniem i z przyjemnością zdobywają wiedzę. Zarówno studenci, absolwenci, jak i pracownicy to osoby nie tylko ciekawe świata, ale także pełne pasji w odkrywaniu nowych rzeczy i w pozytywny sposób wpływające na swoje otoczenie.</p>
+                <p class="info__element-details">Nasze kierunki studiów są interesujące i innowacyjne, tworzone we współpracy z pracodawcami oraz na podstawie trendów w światowej gospodarce i kierunku zmian na dynamicznym rynku pracy. Nasi absolwenci znajdują pracę zgodną ze swoimi zainteresowaniami i wykształceniem.</p>
+            </div>
+            <div class="info__element-image"></div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="contact-form__info">
+            <h2>Nie znalazłeś odpowiedniego kontaktu?</h2>
+            <p>Skorzystaj z formularza.</p>
+
+            <form action="POST">
+                <input type="text" id="name" name="name">
+                <input type="text" id="surname" name="surname">
+                <input type="text" id="email" name="email">
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <div class="agreement">
+                    <input type="checkbox">
+                    <p>Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.</p>
+                </div>
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__content">
+            <div class="footer__col">
+                <div class="footer__col-contact">
+                    ul. Głogowska 10
+                    61-719 Poznań
+                    tel. 61 27 11 000
+                </div>
+                <div class="google-map"></div>
+            </div>
+            <div class="footer__col">
+                <ul class="footer__col-list">
+                    <li class="footer__col-list-item">
+                        <a href="#">O nas</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Dlaczego CDV</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Kadra naukowa</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Dla mediów</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <ul class="footer__col-list">
+                    <li class="footer__col-list-item">
+                        <a href="#">Dla kandydata</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Poradnik maturzysty</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Rekrutacja</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Kredyt studencki</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Studia dla cudzoziemców</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <ul class="footer__col-list">
+                    <li class="footer__col-list-item">
+                        <a href="#">Dla studenta</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Wirtualna Uczelnia</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Stypendia</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Biuro Karier</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Studiuj dalej</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <ul class="footer__col-list">
+                    <li class="footer__col-list-item">
+                        <a href="#">Dla biznesu</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Współpraca z biznesem</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">EmotionsLAB</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Wynajem sal</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Znajdź pracownika</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <ul class="footer__col-list">
+                    <li class="footer__col-list-item">
+                        <a href="#">Na skróty</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Aktualności</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Wydarzenia</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Konferencje</a>
+                    </li>
+                    <li class="footer__col-list-item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="signature">
+                <p>Projekt i realizacja: Crafton</p>
+            </div>
+        </div>
+    </footer>
     <script src="./assets/scripts/app.js"></script>
 </body>
 </html>
