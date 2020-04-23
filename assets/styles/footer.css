@@ -1,0 +1,63 @@
+
+footer {
+    height: 65vh;
+    background: #001927;
+    position: relative;
+}
+
+.footer__content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.footer__col {
+    display: inline-block;
+    vertical-align:top;
+    margin-top: 5%;
+}
+
+.footer__col-list {
+    list-style: none;
+}
+
+.footer__col-list-item {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.footer__col-list-item > a,
+.footer__col-list-item {
+    text-decoration: none;
+    color: #fff;
+    font-family: Muli-Regular;
+}
+
+.footer__col-contact {
+    font-family: Muli-Regular;
+    vertical-align:top;
+}
+
+.footer__col-contact > span {
+    color: white;
+    display: block;
+    margin: 8px 0;
+}
+
+.footer__col-list-item:first-child > a {
+    font-family: Muli-ExtraBold;
+}
+
+.footer__google-map {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #fff;
+}
+
+.footer__signature {
+    color: #fff;
+    font-family: Muli-Regular;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}

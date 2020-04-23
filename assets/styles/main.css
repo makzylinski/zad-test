@@ -1,0 +1,10 @@
+@import "fonts.css";
+
+@import "slider.css";
+@import "info.css";
+@import "form.css";
+@import "footer.css";
+
+body {
+    margin: 0;
+}
