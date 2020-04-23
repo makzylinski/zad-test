@@ -4,7 +4,7 @@
     width: 80vw;
 }
 
-.second-item {
+.second-item, .thirtd-item {
     margin-top: 0px;
 }
 

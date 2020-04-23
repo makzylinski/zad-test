@@ -7,6 +7,71 @@
     filter: brightness(50%);
 }
 
+.slider__dots {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+}
+
+.dot {
+    margin: 15px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.active {
+    background-color: #FFCD19;
+}
+
+.slider__arrows {
+    width: 100px;
+    position: absolute;
+    left: 20%;
+    top: 80%;
+}
+.arrow {
+    width: 50%;
+    height: 4px;
+    background-color: red;
+    position: relative;
+    top: 50px;
+    border-radius: 4px;
+}
+
+.arrow:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 4px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -3px;
+    bottom: 6px;
+}
+
+.arrow:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 4px;
+    background-color: red;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -3px;
+    bottom: -6px;
+
+}
+
+.left {
+    transform: rotate(180deg);
+    position: absolute;
+    left: -20%;
+}
+
 .navbar {
     text-align: right;
     top: 74px;

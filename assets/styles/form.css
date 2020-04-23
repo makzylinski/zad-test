@@ -1,6 +1,6 @@
 .contact-form {
     background-color: #F5F8FA;
-    
+    padding-bottom: 50px;
 }
 
 .contact-form__info {
@@ -32,14 +32,16 @@ textarea:focus, input:focus{
 
 input {
     height: 49px;
+    font-size: 15;
+    font-family: Muli-SemiBold;
 }
 
 #name, #surname {
-    width: 45%;
+    width: 47%;
 }
 
 #name {
-    margin-right: 30px;
+    margin-right: 41px;
 }
 
 #email, #message {
@@ -48,11 +50,18 @@ input {
 
 .agreement {
     width: 100%;
+    margin-bottom: 15px;
 }
 
-.agreement > input[type='checkbox'] {
-    box-shadow: none;
+
+label > input[type='checkbox'] {
     display: inline-block;
+    box-shadow: none;
+    appearance: none;
+    color: red;
+    margin: 0;
+    height: 15px;
+    width: 15px;
 }
 
 form > button {
@@ -65,4 +74,6 @@ form > button {
     font-size: 14px;
     font-family: Muli-ExtraBold;
     padding: 18px;
+    width: 118px;
+    height: 50px;
 }
