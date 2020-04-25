@@ -2,6 +2,7 @@ const arrowRight = document.querySelector('.right');
 const arrowLeft = document.querySelector('.left');
 const sliderPhoto = document.querySelector('.slider');
 const sliderDots = document.querySelectorAll('.dot');
+const navbar = document.querySelector('.navbar');
 
 const photoPath = './assets/images/';
 let currentSlideIndex = 0;
@@ -42,3 +43,28 @@ arrowLeft.addEventListener('click', () => {
         sliderPhoto.style.backgroundImage = `url(${sliderPhotos[currentSlideIndex].path})`
     }
 })
+
+window.onscroll = () => {
+    let top = window.scrollY;
+    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    
+    if(top >= vh) {
+        navbar.classList.add('navbar--active');
+    } else {
+        navbar.classList.remove('navbar--active');
+    }
+}
+
+function initMap() {
+    const options = {
+        zoom: 14,
+        center: { lat: 52.4064, lng: 16.9152 }
+    }
+
+    const map = new google.maps.Map(document.querySelector('.footer__google-map'), options);
+
+    const marker = new google.maps.Marker({
+        position: { lat: 52.403190, lng: 16.910160 },
+        map: map
+    });
+}

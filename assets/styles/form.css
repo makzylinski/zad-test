@@ -30,22 +30,39 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-input {
+input, textarea {
     height: 49px;
     font-size: 15;
     font-family: Muli-SemiBold;
+    padding-left: 2%;
 }
 
 #name, #surname {
-    width: 47%;
+    width: 45%
+}
+
+.personal-data {
+    width: 100%;
+    position: relative;
+    height: 69px;
 }
 
 #name {
-    margin-right: 41px;
+    position: absolute;
+    left: 0;
+}
+
+#surname {
+    position: absolute;
+    right: 0;
 }
 
 #email, #message {
-    width: 100%;
+    width: 99%;
+}
+
+#message {
+    height: 160px;
 }
 
 .agreement {
@@ -58,7 +75,6 @@ label > input[type='checkbox'] {
     display: inline-block;
     box-shadow: none;
     appearance: none;
-    color: red;
     margin: 0;
     height: 15px;
     width: 15px;
@@ -76,4 +92,15 @@ form > button {
     padding: 18px;
     width: 118px;
     height: 50px;
+}
+
+form > button[disabled] {
+    background: #7fa4ac;
+    cursor: not-allowed;
+}
+
+.invalid {
+    border: 1px solid red;
+    color: #e05a5a;
+    box-shadow: none;
 }
