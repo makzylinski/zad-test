@@ -69,3 +69,26 @@ const checkValid = () => {
         submitButton.disabled = false;
     }
 }
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append(name, nameInput.value);
+    formData.append(surname, surnameInput.value);
+    formData.append(email, emailInput.value);
+    formData.append(message, messageInput.value);
+
+    console.log(nameInput.value)
+    
+    fetch('dom.php', {
+        method: 'post',
+        body: formData
+    }).then(function (resp) {
+        return resp.text();
+    }).then(function (text) {
+        console.log(text);
+    }).catch(e => {
+        console.log(e);
+    })
+})
