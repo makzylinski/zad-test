@@ -9,18 +9,22 @@
 <body>
     <header>
         <div class="slider"></div>
-        <div class="logo"></div>
+        
         <nav class="navbar">
-            <a href="#" class="navbar__element">I stopnia</a>
-            <a href="#" class="navbar__element">II stopnia</a>
-            <a href="#" class="navbar__element">Podyplomowe</a>
-            <a href="#" class="navbar__element">Szkolenia</a>
-            <a href="#" class="navbar__element">Usługi</a>
+            <div class="logo"></div>
+            <div class="navbar__elements">
+                <a href="#" class="navbar__element">I stopnia</a>
+                <a href="#" class="navbar__element">II stopnia</a>
+                <a href="#" class="navbar__element">Podyplomowe</a>
+                <a href="#" class="navbar__element">Szkolenia</a>
+                <a href="#" class="navbar__element">Usługi</a>
+            </div>
+            
         </nav>
 
         <div class="slider__dots">
-            <span class="dot"></span>
             <span class="dot active"></span>
+            <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -84,18 +88,21 @@
             <h2>Nie znalazłeś odpowiedniego kontaktu?</h2>
             <p>Skorzystaj z formularza.</p>
 
-            <form action="POST">
-                <input type="text" id="name" name="name">
-                <input type="text" id="surname" name="surname">
-                <input type="text" id="email" name="email">
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <form id="form">
+                <div class="personal-data">
+                    <input type="text" id="name" name="name" placeholder="Imię" required>
+                    <input type="text" id="surname" name="surname" placeholder="Nazwisko" required>
+                </div>
+                <input type="text" id="email" name="email" placeholder="Adres e-mail" required>
+                <textarea name="message" id="message" placeholder="Treść wiadomości" required></textarea>
+                
                 <div class="agreement">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="checkbox">
                         Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.
                     </label>
                 </div>
-                <button type="submit">Wyślij</button>
+                <button type="submit" id="submitButton" disabled>Wyślij</button>
             </form>
         </div>
     </section>
@@ -211,5 +218,9 @@
         </div>
     </footer>
     <script src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/formvalidation.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb_1aOtB5iszx6fckp9IDdBK6JczNtm3o&callback=initMap">
+    </script>
 </body>
 </html>
