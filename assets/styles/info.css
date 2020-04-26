@@ -27,16 +27,15 @@
     margin-top: 0px;
 }
 
+.third-item {
+    position: relative;
+}
+
 .info__element-wrapper {
     display: inline-block;
     width: 100%;
     vertical-align: top;
 }
-
-/*.left-side {
-    margin-left: 40px;
-    margin-right: 0;
-}*/
 
 .info__element-wrapper > p {
     font-family: Muli-Regular;
@@ -47,6 +46,15 @@
 .info__element-header {
     font-family: Muli-ExtraBold;
     font-size: 2rem;
+}
+
+.info__element-requirements > span {
+    display: block;
+    margin-left: 15px;
+}
+
+.info__element-requirements > span:before {
+    content: url('../images/tick-sign.png');
 }
 
 .info__element-image {
@@ -66,4 +74,12 @@
 
 .third-item .info__element-image {
     background-image: url("../images/budynek.png");
+}
+
+.video {
+    filter: brightness(50%);
+}
+
+.video:hover {
+    cursor: pointer;
 }

@@ -6,10 +6,7 @@
     z-index: 100;
   }
   
-  /* Hide Hamburger */
   #hamnav label, #hamburger { display: none; }
-  
-  /* Horizontal Menu Items */
 
   #hamitems {
     width: 50vw;
@@ -18,7 +15,7 @@
   
   #hamitems a {
     font-family: Muli-Bold;
-    width: 20%; /* 100% / 5 tabs = 20% */
+    width: 20%;
     display: block;
     padding: 10px;
     color: white;
@@ -29,9 +26,8 @@
     background: #401408;
   }
   
-  /* [ON SMALL SCREENS] */
+
   @media screen and (max-width: 768px){
-    /* Show Hamburger Icon */
     #hamnav label { 
       display: inline-block; 
       color: white;
@@ -41,7 +37,6 @@
       padding: 10px;
     }
   
-    /* Break down menu items into vertical */
     #hamitems a {
       box-sizing: border-box;
       display: block;
@@ -49,7 +44,6 @@
       border-top: 1px solid #333;
     }
   
-    /* Toggle Show/Hide Menu */
     #hamitems { display: none; }
     #hamnav input:checked ~ #hamitems { display: block; }
   }

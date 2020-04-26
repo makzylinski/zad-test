@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/main.css">
-    <title>Document</title>
+    <title>Zadanie testowe</title>
 </head>
 <body>
     <header>
@@ -39,7 +39,6 @@
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
-            <span class="dot"></span>
         </div>
 
         <div class="slider__arrows">
@@ -64,7 +63,7 @@
             <div class="info__element-wrapper">
                 <h1 class="info__element-header">Dla kogo?</h1>
                 <p class="info__element-content">Dedykowane nauczycielom posiadającym przygotowanie pedagogiczne, którzy chcą uzyskać merytoryczne i metodyczne przygotowanie do nauczania kolejnego przedmiotu - Geografii.</p>
-                <p class="info__element-details">Studia adresowane są do osób legitymujących się wyższym wykształceniem na poziomie studiów licencjackim o specjalnościach nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, lub słuchaczy legitymujących się wyższym wykształceniem na poziomie studiów magisterskich nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, zgodnie z Rozporządzeniem Ministra Edukacji Narodowej z dnia 1 sierpnia 2017 r. w sprawie szczegółowych kwalifikacji wymaganych od nauczycieli (Dz.U. 2017 poz. 1575).</p>
+                <p class="info__element-details">Studia adresowane są do osób legitymujących się wyższym wykształceniem na poziomie studiów licencjackim o specjalnościach nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, lub słuchaczy legitymujących się wyższym wykształceniem na poziomie studiów magisterskich nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, zgodnie z Rozporządzeniem Ministra Edukacji Narodowej z dnia 1 sierpnia 2017 r. w sprawie szczegółowych kwalifikacji wymaganych od nauczycieli <a href="http://prawo.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20170001575">(Dz.U. 2017 poz. 1575).</a></p>
                 <p class="info__element-requirements">Wymagane od kandydata:
                     <span>Ukończone studia wyższe</span>
                     <span>Przygotowanie pedagogiczne</span>
@@ -85,13 +84,19 @@
     </section>
 
     <section class="info third-item">
+        <div class="popup">
+            <span class="close">&#10060;</span>
+            <iframe width="700" height="615" class="yt-vid"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+        </div>
         <div class="info__element">
             <div class="info__element-wrapper">
                 <h1 class="info__element-header">Z kim?</h1>
                 <p class="info__element-content">Ciekawość jest najpotężniejszą cechą ludzką, która popycha ludzi do ciągłego rozwoju. CDV to miejsce, w którym studenci z zainteresowaniem i z przyjemnością zdobywają wiedzę. Zarówno studenci, absolwenci, jak i pracownicy to osoby nie tylko ciekawe świata, ale także pełne pasji w odkrywaniu nowych rzeczy i w pozytywny sposób wpływające na swoje otoczenie.</p>
                 <p class="info__element-details">Nasze kierunki studiów są interesujące i innowacyjne, tworzone we współpracy z pracodawcami oraz na podstawie trendów w światowej gospodarce i kierunku zmian na dynamicznym rynku pracy. Nasi absolwenci znajdują pracę zgodną ze swoimi zainteresowaniami i wykształceniem.</p>
             </div>
-            <div class="info__element-image"></div>
+            <div class="info__element-image video"></div>
         </div>
     </section>
 
@@ -114,7 +119,7 @@
                         Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.
                     </label>
                 </div>
-                <button type="submit" id="submitButton" disabled>Wyślij</button>
+                <button type="submit" id="subButton" disabled>Wyślij</button>
             </form>
         </div>
     </section>
@@ -231,6 +236,7 @@
     </footer>
     <script src="./assets/scripts/app.js"></script>
     <script src="./assets/scripts/form.js"></script>
+    <script src="./assets/scripts/popup.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb_1aOtB5iszx6fckp9IDdBK6JczNtm3o&callback=initMap">
     </script>

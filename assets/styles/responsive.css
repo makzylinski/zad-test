@@ -1,5 +1,4 @@
 @media (min-width: 375px) {
-    
     .buttons {
         left: 10%;
     }
@@ -77,7 +76,6 @@
         margin-left: 1rem;
         font-size: 1rem;
     }
-
     
     .navbar--active {
         background: rgba(232, 232, 232, 0.3);
@@ -163,6 +161,10 @@
 }
 
 @media (min-width: 1200px) {
+    .popup {
+        display: none;
+    }
+
     #hamnav {
         display: none;
     }
@@ -195,6 +197,11 @@
         color: #fff;
         margin-left: 2.5rem;
         font-size: 0.7rem;
+    }
+
+    
+    .navbar__element:hover {
+        color: #99aab5;
     }
 
     
@@ -259,7 +266,7 @@
     .logo {
         margin-top: 2.5rem;
         left: 12%;
-        height: 4.3rem;
+        height: 4.5rem;
         width: 4rem;
     }
 
@@ -287,6 +294,10 @@
     .image-left {
         left: 0;
         top: 0;
+    }
+
+    .contact-form__info {
+        width: 50vw;
     }
 
     #name, #surname {
