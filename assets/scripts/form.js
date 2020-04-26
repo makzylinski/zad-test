@@ -3,7 +3,7 @@ const nameInput = document.getElementById('name');
 const surnameInput = document.getElementById('surname');
 const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('message');
-const submitButton = document.getElementById('submitButton');
+const submitButton = document.getElementById('subButton');
 const agreementCheckbox = document.getElementById('checkbox');
 
 nameInput.addEventListener('keyup', () => {
@@ -63,32 +63,42 @@ agreementCheckbox.addEventListener('change', () => {
 
 const checkValid = () => {
     const validInputs = document.querySelectorAll('.valid');
-    console.log(validInputs.length);
 
     if(validInputs.length === 4 && agreementCheckbox.checked) {
         submitButton.disabled = false;
+        trySendRequest();
     }
 }
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+const trySendRequest = () => {
+    if(!submitButton.disabled) {
+        const form = {
+            name: nameInput,
+            surname: surnameInput,
+            email: emailInput,
+            message: messageInput,
+            submit: submitButton
+        };
 
-    const formData = new FormData();
-    formData.append(name, nameInput.value);
-    formData.append(surname, surnameInput.value);
-    formData.append(email, emailInput.value);
-    formData.append(message, messageInput.value);
+        form.submit.addEventListener('click', (e) => {
+            e.preventDefault();
+            const request = new XMLHttpRequest();
 
-    console.log(nameInput.value)
-    
-    fetch('dom.php', {
-        method: 'post',
-        body: formData
-    }).then(function (resp) {
-        return resp.text();
-    }).then(function (text) {
-        console.log(text);
-    }).catch(e => {
-        console.log(e);
-    })
-})
+            request.onload = () => {
+                let responseObject = null;
+
+                try {
+                    responseObject = JSON.parse(request.responseText)
+                } catch(e) {
+                    console.log(e);
+                }
+            };
+
+            const requestData = `name=${form.name.value}&surname=${form.surname.value}&email=${form.email.value}&message=${form.message.value}`
+
+            request.open('post', 'index.php');
+            request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            request.send(requestData);
+        })
+    }
+}
