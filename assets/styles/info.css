@@ -1,35 +1,69 @@
 .info {
-    margin: 200px auto 0 auto;
-    height: 100vh;
+    margin: 0 auto;
+    height: 130vh;
     width: 80vw;
 }
 
-.second-item, .thirtd-item {
+.first-item {
+    height: 150vh;
+}
+
+.second-item {
+    position: relative;
+    height: 120vh;
+}
+
+.left-side {
+    position: absolute;
+    margin: 0;
+}
+
+.image-left {
+    position: absolute;
+    bottom:0;
+}
+
+.second-item, .third-item {
     margin-top: 0px;
 }
 
 .info__element-wrapper {
     display: inline-block;
-    width: 60%;
+    width: 100%;
     vertical-align: top;
-    margin-right: 40px;
 }
+
+/*.left-side {
+    margin-left: 40px;
+    margin-right: 0;
+}*/
 
 .info__element-wrapper > p {
     font-family: Muli-Regular;
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 0.85rem;
 }
 
 .info__element-header {
     font-family: Muli-ExtraBold;
-    font-size: 36px;
+    font-size: 2rem;
 }
 
 .info__element-image {
     display: inline-block;
-    background-image: url("../images/info-1.png");
     background-size: cover;
-    height: 470px;
-    width: 35%;
+    height: 20vh;
+    width: 100%;
+}
+
+.first-item .info__element-image {
+    background-image: url("../images/globus.png");
+}
+
+.second-item .info__element-image {
+    background-image: url("../images/reka.png");
+}
+
+.third-item .info__element-image {
+    background-image: url("../images/budynek.png");
 }

@@ -19,8 +19,20 @@
                 <a href="#" class="navbar__element">Szkolenia</a>
                 <a href="#" class="navbar__element">Usługi</a>
             </div>
-            
         </nav>
+        
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+    
+            <div id="hamitems">
+              <a href="#">I stopnia</a>
+              <a href="#">II stopnia</a>
+              <a href="#">Podyplomowe</a>
+              <a href="#">Szkolenia</a>
+              <a href="#">Usługi</a>
+            </div>
+          </nav>
 
         <div class="slider__dots">
             <span class="dot active"></span>
@@ -31,8 +43,8 @@
         </div>
 
         <div class="slider__arrows">
-            <div class="arrow right"></div>
-            <div class="arrow left"></div>
+            <div class="arrow slider__arrows-right"></div>
+            <div class="arrow slider__arrows-left"></div>
         </div>
         
 
@@ -47,7 +59,7 @@
         </div>
     </header>
 
-    <section class="info">
+    <section class="info first-item">
         <div class="info__element">
             <div class="info__element-wrapper">
                 <h1 class="info__element-header">Dla kogo?</h1>
@@ -64,8 +76,8 @@
 
     <section class="info second-item">
         <div class="info__element">
-            <div class="info__element-image"></div>
-            <div class="info__element-wrapper">
+            <div class="info__element-image image-left"></div>
+            <div class="info__element-wrapper left-side">
                 <h1 class="info__element-header">Po co?</h1>
                 <p class="info__element-content">UW wie co zrobić, by programy proponowanych kierunków studiów były jak najbardziej atrakcyjne z biznesowego punktu widzenia. Do współpracy zapraszamy przedsiębiorców, trenerów, doświadczonych praktyków. Dbamy o to, żeby nasi studenci korzystali z doświadczenia i wiedzy osób, które odniosły w życiu zawodowy sukces. Dążymy do tego, by wybierający naszą uczelnię już w trakcie studiów mieli kontakt z jak największą liczbą pracodawców i praktyków biznesu ponieważ wiemy, że pomoże to im w zdobyciu wielu potrzebnych kwalifikacji oraz umiejętności, które zaprocentują w każdym miejscu pracy a także zainspiruje do poszerzania swoich kompetencji.</p>
             </div>
@@ -109,7 +121,7 @@
 
     <footer>
         <div class="footer__content">
-            <div class="footer__col">
+            <div class="footer__col contact">
                 <div class="footer__col-contact">
                     <span>ul. Głogowska 10</span>
                     <span>61-719 Poznań</span>
@@ -218,7 +230,7 @@
         </div>
     </footer>
     <script src="./assets/scripts/app.js"></script>
-    <script src="./assets/scripts/formvalidation.js"></script>
+    <script src="./assets/scripts/form.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb_1aOtB5iszx6fckp9IDdBK6JczNtm3o&callback=initMap">
     </script>

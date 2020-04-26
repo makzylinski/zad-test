@@ -1,0 +1,312 @@
+@media (min-width: 375px) {
+    
+    .buttons {
+        left: 10%;
+    }
+
+    .info__element-image {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 410px) {
+    .info__element-image {
+        height: 50vh;
+    }
+
+    #hamnav {
+        width: 8%;
+    }
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+    .slider {
+        background-size: cover;
+    }
+
+    .main-text {
+        top: 15%;
+    }
+
+    .first-item {
+        height: 115vh;
+    }
+
+    .second-item, .third-item {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+
+    .slider {
+        background-size: 120%;
+        background-position: 5% 40%;
+    }
+
+    #hamnav {
+        display: none;
+    }
+
+    .logo {
+        top: 20%;
+        height: 3.3rem;
+        width: 3rem;
+    }
+
+    .navbar {
+        display: block;
+        text-align: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-family: Muli-Bold;
+        width: 100%;
+        height: 10%;
+        z-index: 100;
+    }
+
+    
+    .navbar__elements {
+        margin: 2.2rem 2rem;
+    }
+
+    .navbar__element {
+        text-decoration: none;
+        color: #fff;
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    
+    .navbar--active {
+        background: rgba(232, 232, 232, 0.3);
+        filter: brightness(50%);
+    }
+
+    .slider__dots {
+        position: absolute;
+        top: 15%;
+        right: 8%;
+    }
+    
+    .dot {
+        margin: 1rem;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: #fff;
+        border-radius: 50%;
+        display: block;
+    }
+    
+    .active {
+        background-color: #FFCD19;
+    }
+
+    .buttons {
+        top: 25%;
+    }
+
+    .slider__arrows {
+        position: absolute;
+        left: 15%;
+        top: 32%;
+    }
+
+    .arrow {
+        display: inline-block;
+        background-image: url("../images/nav-arrow-active.png");
+        background-size: cover;
+        width: 1.8rem;
+        height: 1.3rem;
+        margin: 0.3rem;
+    }
+
+    .slider__arrows-left {
+        transform: rotate(180deg);
+    }
+
+    .first-item {
+        height: 90vh;
+    }
+
+    .second-item, .third-item {
+        height: 80vh;
+    }
+
+    .footer__col {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+    .button {
+        padding: 0.8rem;
+        margin-right:1rem;
+    }
+
+    .info {
+        margin-top: 5rem;
+    }
+
+    .first-item {
+        height: 120vh;
+    }
+
+    .second-item, .third-item {
+        height: 110vh;
+    }
+
+    .info__element-wrapper > p {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #hamnav {
+        display: none;
+    }
+
+    .slider {
+        height: 100vh;
+        background-size: 120%;
+        background-position: 5% 45%;
+    }
+
+    .navbar {
+        display: block;
+        text-align: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-family: Muli-Bold;
+        width: 100%;
+        height: 10%;
+        z-index: 100;
+    }
+
+    
+    .navbar__elements {
+        margin: 3.8rem 13rem;
+    }
+
+    .navbar__element {
+        text-decoration: none;
+        color: #fff;
+        margin-left: 2.5rem;
+        font-size: 0.7rem;
+    }
+
+    
+    .navbar--active {
+        background: rgba(232, 232, 232, 0.3);
+        filter: brightness(50%);
+        height: 160px;
+    }
+
+    .slider__dots {
+        position: absolute;
+        top: 45%;
+        right: 8%;
+    }
+    
+    .dot {
+        margin: 1rem;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: #fff;
+        border-radius: 50%;
+        display: block;
+    }
+    
+    .active {
+        background-color: #FFCD19;
+    }
+
+    .buttons {
+        top: 60%;
+        left: 12%;
+    }
+
+    .slider__arrows {
+        position: absolute;
+        left: 12%;
+        top: 70%;
+    }
+
+    .arrow {
+        display: inline-block;
+        background-image: url("../images/nav-arrow-active.png");
+        background-size: cover;
+        width: 1.3rem;
+        height: 0.9rem;
+        margin: 0.3rem;
+    }
+
+    .slider__arrows-left {
+        transform: rotate(180deg);
+    }
+
+    .main-text {
+        top: 40%;
+        left: 12%;
+    }
+
+    .main-text__head {
+        font-size: 2rem;
+    }
+
+    .logo {
+        margin-top: 2.5rem;
+        left: 12%;
+        height: 4.3rem;
+        width: 4rem;
+    }
+
+    .first-item, .second-item, .third-item {
+        height: 100vh;
+    }
+
+    .info { margin-top: 10%;}
+
+    .info__element-wrapper {
+        width: 60%;
+    }
+
+    .info__element-image {
+        margin-left: auto;
+        width: 35%;
+        height: 350px;
+    }
+
+    .left-side {
+        right: 0;
+        top: 0;
+    }
+
+    .image-left {
+        left: 0;
+        top: 0;
+    }
+
+    #name, #surname {
+        width: 45%;
+        top: 74px;
+    }
+
+    .footer__content {
+        width: 90%;
+    }
+
+    .footer__col {
+        width: 15%;
+    }
+
+    .footer__col-list-item > a{
+        font-size: 0.8rem;
+    }
+
+    .footer__col-contact {
+        margin-bottom: 1.5rem;
+    }
+}

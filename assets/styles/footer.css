@@ -1,6 +1,5 @@
-
 footer {
-    height: 65vh;
+    height: 100%;
     background: #001927;
     position: relative;
 }
@@ -23,7 +22,7 @@ footer {
 .footer__col-list-item {
     text-decoration: none;
     margin: 10px;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .footer__col-list-item > a,
@@ -32,14 +31,22 @@ footer {
     color: #fff;
     font-family: Muli-Regular;
 }
+.footer__col:nth-child(6) {
+    margin-bottom: 2.5rem;
+}
+
+.contact {
+    width: 100%;
+}
 
 .footer__col-contact {
     font-family: Muli-Regular;
-    vertical-align:top;
+    vertical-align: top;
+    text-align: center;
 }
 
 .footer__col-contact > span {
-    color: white;
+    color: #fff;
     display: block;
     margin: 8px 0;
 }
@@ -51,12 +58,13 @@ footer {
 .footer__google-map {
     height: 200px;
     width: 200px;
+    margin: 0 auto 30px auto;
 }
 
 .footer__signature {
     color: #fff;
     font-family: Muli-Regular;
     position: absolute;
-    bottom: 15%;
-    right: 10%;
+    bottom: 0;
+    right: 5%;
 }
