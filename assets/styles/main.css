@@ -1,9 +1,11 @@
 @import "fonts.css";
 
 @import "slider.css";
+@import "hamburger-nav.css";
 @import "info.css";
 @import "form.css";
 @import "footer.css";
+@import "responsive.css";
 
 body {
     margin: 0;

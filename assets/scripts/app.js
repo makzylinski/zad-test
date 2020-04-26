@@ -13,7 +13,7 @@ const sliderPhotos = [
     { path: `${photoPath}logo.png`}
 ];
 
-arrowRight.addEventListener('click', () => {
+/*arrowRight.addEventListener('click', () => {
     transitionSlideIndex = currentSlideIndex + 1;
     if(transitionSlideIndex < sliderPhotos.length) {
         sliderPhoto.style.backgroundImage = `url(${sliderPhotos[transitionSlideIndex].path})`
@@ -42,13 +42,13 @@ arrowLeft.addEventListener('click', () => {
         currentSlideIndex = 0;
         sliderPhoto.style.backgroundImage = `url(${sliderPhotos[currentSlideIndex].path})`
     }
-})
+})*/
 
 window.onscroll = () => {
     let top = window.scrollY;
     const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    
-    if(top >= vh) {
+    console.log(vh)
+    if(top >= vh/3) {
         navbar.classList.add('navbar--active');
     } else {
         navbar.classList.remove('navbar--active');
